@@ -1,0 +1,76 @@
+<project name="Test dev org backup" default="GitOperations" basedir="." xmlns:sf="antlib:com.salesforce">
+    <property file="build.properties"/>
+    <property environment="env"/>
+    <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
+        <classpath>
+        	<!--This is important, here is where we need to define our ant-salesforce.jar location in our folder structure-->
+            <pathelement location=".\ant-salesforce.jar" />        	
+        </classpath>
+    </taskdef>
+
+	<target name="proxy">
+		<property name="proxy.host" value="proxy.ap.cat.com" />
+		<property name="proxy.port" value="80" />
+		<setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}" />
+	</target>
+	
+	<target name="SFDCFetch" description="Fetches the metadata specified in the package.xml" depends="proxy">
+	  <!-- Retrieve the contents into another directory -->
+	  <sf:retrieve username="${sf.username}"
+				   password="${sf.password}"
+				   serverurl="${sf.serverurl}"
+				   retrieveTarget="./src"
+				   unpackaged="./src/package.xml" />
+	</target>
+
+	<macrodef name="git">
+		<attribute name="command" />
+		<attribute name="dir" default="${gt.Directory}" />
+		<element name="args" optional="true" />
+		<sequential>
+			<echo message="git @{command}" />
+			<exec executable="git" dir="@{dir}">
+				<arg value="@{command}" />
+				<args/>
+			</exec>
+		</sequential>
+	</macrodef>
+
+	<target name="GitOperations" description="Commits all changes to version git" depends="SFDCFetch">
+
+		<echo message="Commiting all changes with message ${gt.commitMessage}" /> 
+
+		<git command="add">
+			<args>
+				<arg value="." />
+			</args>
+		</git>
+
+		<git command="commit">
+			<args>
+				<arg value="-am ${gt.commitMessage}" />
+			</args>
+		</git>
+	</target>
+	<target name="deployCode" depends="proxy">
+		<sf:deploy
+			username="${sf.username}" 
+			password="${sf.password}" 
+			serverUrl="${sf.serverurl}" 
+			deployRoot="./src"
+			testLevel="RunLocalTests"
+		>
+	</sf:deploy>
+    </target>
+	<target name="validate" depends="proxy">
+		<sf:deploy
+			username="${sf.username}" 
+			password="${sf.password}" 
+			serverUrl="${sf.serverurl}" 
+			deployRoot="./src"
+			testLevel="RunLocalTests"
+			checkOnly="true"
+		>
+	</sf:deploy>
+    </target>
+</project>
