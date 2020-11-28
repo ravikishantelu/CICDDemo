@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>This custom setting is used to activate/deactivate the Trigger functionality</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Account_Trigger_Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used to Activate/Deactivate AccountTrigger</description>
+        <externalId>false</externalId>
+        <label>Account Trigger Is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Endpoint__c</fullName>
+        <description>Google Endpoint</description>
+        <externalId>false</externalId>
+        <label>Endpoint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Junction_Trigger_Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used to activate/deactivate JunctionTrigger</description>
+        <externalId>false</externalId>
+        <label>Junction Trigger Is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Key__c</fullName>
+        <description>Google API Key</description>
+        <externalId>false</externalId>
+        <label>Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Trigger_Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used to Activate/Deactivate ProjectTrigger</description>
+        <externalId>false</externalId>
+        <label>Project Trigger Is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Stakeholder_Trigger_Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used to Activate/Deactivate Stakeholder Trigger</description>
+        <externalId>false</externalId>
+        <label>Stakeholder Trigger Is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>ProQuest</label>
+    <visibility>Public</visibility>
+</CustomObject>

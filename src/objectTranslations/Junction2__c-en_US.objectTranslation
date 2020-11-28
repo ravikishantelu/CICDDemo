@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Stakeholder</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Stakeholders</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountProject --></label>
+        <name>AccountProject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Stakeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stakeholder --></label>
+        <name>Stakeholder__c</name>
+        <relationshipLabel><!-- Stakeholders --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Account Stakeholder Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

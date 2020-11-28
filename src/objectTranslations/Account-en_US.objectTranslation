@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Validation --></label>
+        <name>Address_Validation__c</name>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation><!-- Invalid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not checked</masterLabel>
+            <translation><!-- Not checked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid</masterLabel>
+            <translation><!-- Valid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Annual Revenue --></label>
+        <name>Current_Annual_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Priority --></label>
+        <name>CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dataloader --></label>
+        <name>Dataloader__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Project Start Date --></label>
+        <name>First_Project_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Project End Date --></label>
+        <name>Last_Project_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Projects --></label>
+        <name>No_of_Projects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SLA (hours) --></label>
+        <name>SLA_hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upsell Opportunity --></label>
+        <name>UpsellOpportunity__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Total Revenue</value>
+        </caseValues>
+        <name>annual_revenue_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- BillingStreet, BillingCity &amp; BillingCountry are required --></errorMessage>
+        <name>Address_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>Billing</name>
+    </webLinks>
+</CustomObjectTranslation>

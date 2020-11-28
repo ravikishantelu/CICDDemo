@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Active</fullName>
+        <categories>ProQuest</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Active</shortDescription>
+        <value>Active</value>
+    </labels>
+    <labels>
+        <fullName>Completed</fullName>
+        <categories>ProQuest</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Completed</shortDescription>
+        <value>Completed</value>
+    </labels>
+    <labels>
+        <fullName>Invalid</fullName>
+        <categories>ProQuest</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invalid</shortDescription>
+        <value>Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Valid</fullName>
+        <categories>ProQuest</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Valid</shortDescription>
+        <value>Valid</value>
+    </labels>
+    <labels>
+        <fullName>Xero_Tenant_Id</fullName>
+        <categories>Xero</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Xero Tenant Id</shortDescription>
+        <value>82d2a576-821a-44ac-869d-7f902857741d</value>
+    </labels>
+</CustomLabels>

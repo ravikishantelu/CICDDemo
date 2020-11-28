@@ -1,0 +1,23 @@
+<apex:page >
+    
+    <form id="formId" action="https://proquest-developer-edition.ap5.force.com/services/apexrest/Account/" method="POST">
+    </form>
+    
+    <script>
+        function openPopup() {
+            document.getElementsByClassName('stripe-button-el')[0].click ();
+        }
+        
+        var s = document.createElement( 'script' );
+        s.setAttribute( 'src', 'https://checkout.stripe.com/checkout.js');
+        s.setAttribute( 'class', 'stripe-button');
+        s.setAttribute( 'data-key', 'pk_test_j12BTDEV5qt0HVCT5jgMuXuW');
+        s.setAttribute( 'data-amount', '32.00');
+        s.setAttribute( 'data-name', 'SACS');
+        s.setAttribute( 'data-email', 'ravi@proquest.com');
+        s.setAttribute( 'data-description', 'Testing');
+        s.setAttribute( 'data-image', 'https://stripe.com/img/documentation/checkout/marketplace.png');
+        document.getElementById('formId').appendChild( s );
+        setTimeout(function(){ openPopup() }, 2000);
+    </script>
+</apex:page>

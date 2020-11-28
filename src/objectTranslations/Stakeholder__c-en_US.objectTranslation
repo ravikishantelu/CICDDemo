@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Stakeholder</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Stakeholders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Project Stakeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Business Controller</masterLabel>
+            <translation><!-- Business Controller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Owner</masterLabel>
+            <translation><!-- Project Owner --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Stakeholder Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
